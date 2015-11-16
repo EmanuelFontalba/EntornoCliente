@@ -3,6 +3,11 @@
 		<meta charset="utf-8">
 		<title>Tutorial de arrays - JavaScript</title>
 	</head>
+	<style type="text/css">
+		.respuesta{
+			color:#41E92E;
+		}
+	</style>
 	<body>
 		<h1>Tutorial de JavaScript</h1>
 		<h2>Ejercicios</h2>
@@ -20,46 +25,58 @@
 		</ul>
 		<h2>Cuestiones</h2>
 		<p>Declaración recomendada para la creación de arrays en JavaScript pop() y push()</p>
+		<p class="respuesta">var soyUnArray = [];</p>
 		<ul>
-			<li>Utilidad</li>
-			<li>¿Modifican el array original?</li>
-			<li>¿Devuelven algún valor?</li>
+			<li>Utilidad
+				<p class="respuesta">Pop sirve para eliminar el ultimo elemento del array y Push para añadir un elemento al final del array.</p></li>
+			<li>¿Modifican el array original?
+				<p class="respuesta">Si, lo modifica</p></li>
+			<li>¿Devuelven algún valor?
+				<p class="respuesta">Push en caso de que añade algo devuelve 1 y en caso contrario 0. Pop devuelve el elemento que a eliminado</p></li>
 		</ul> 
 		
 
 		<p>shift() y unshift(),</p>
 		<ul>
-			<li>Utilidad</li>
-			<li>¿Modifican el array original?</li>
-			<li>¿Devuelven algún valor?</li>
+			<li>Utilidad
+				<p class="respuesta">Shift elimina el primer elemento del array y unshift añade los elementos que se le pasen por parámetro al principio del array.</p></li>
+			<li>¿Modifican el array original?
+				<p class="respuesta">Si, lo modifican</p></li>
+			<li>¿Devuelven algún valor?
+				<p class="respuesta">Shift devuelve el elemento que a eliminado y unshift devuelve 1 en caso de haber introducido el elemento en el array y 0 en el caso contrario</p></li>
 		</ul> 
 
 		<p>De los cuatro métodos anteriores, indica los recomendados para la inserción/eliminación de un elemento y por qué</p>
+		<p class="respuesta">Se recomienda pop y push ya que son más rápidos al no tener que modificar las posiciones de el resto de elementos.</p>
+
 		<p>join() y split(), ¿son métodos de String o de Array?</p>
+		<p class="respuesta">Join es de array y split es de string</p>
 		<p>splice()</p>
 
 		<ul>
-			<li>Utilidad</li>
-			<li>Indica significado del primer argumento admitido: índice, cantidad o contenido</li>
-			<li>Indica significado del segundo argumento admitido: índice, cantidad o contenido</li>
-			<li>Indica significado del resto de argumentos admitidos: índice, cantidad o contenido</li>
-			<li>¿Modifican el array original?</li>
+			<li>Utilidad<p class="respuesta">Sirve para añadir o eliminar elementos de un array, sustituyendolos por los indicados en los parámetros del método.</p></li>
+			<li>Indica significado del primer argumento admitido: índice, cantidad o contenido<p class="respuesta">Índice</p></li>
+			<li>Indica significado del segundo argumento admitido: índice, cantidad o contenido<p class="respuesta">Cantidad</p></li>
+			<li>Indica significado del resto de argumentos admitidos: índice, cantidad o contenido<p class="respuesta">Contenido</p></li>
+			<li>¿Modifican el array original?
+				<p class="respuesta">Si, lo modifican</p></li>
 		</ul> 
 
 		<p>slice()</p>
 
 		<ul>
-			<li>Utilidad</li>
-			<li>Indica significado del primer argumento admitido: índice, cantidad o contenido</li>
-			<li>Indica significado del segundo argumento admitido: índice, cantidad o contenido</li>
-			<li>Indica significado del resto de argumentos admitidos: índice, cantidad o contenido</li>
-			<li>¿Modifican el array original?</li>
+			<li>Utilidad<p class="respuesta">Slice es un método que devuelve una selección de elementos de un array</p></li>
+			<li>Indica significado del primer argumento admitido: índice, cantidad o contenido<p class="respuesta"></p>Índice</li>
+			<li>Indica significado del segundo argumento admitido: índice, cantidad o contenido<p class="respuesta">Índice</p></li>
+			<li>Indica significado del resto de argumentos admitidos: índice, cantidad o contenido<p class="respuesta">No tiene tercer argumento</p></li>
+			<li>¿Modifican el array original?
+				<p class="respuesta">No se modifica el array original, devuelve otro con el resultado.</p></li>
 		</ul>
 
 		<p>Un Array es un Object:</p>
 		<ul>
-			<li>Indica resultado de typeof []</li>
-			<li>Método forEach() de un array. Indica utilidad y si funciona en todos los navegadores. Entrega un pequeño código que demuestre su uso</li>
+			<li>Indica resultado de typeof []
+				<p class="respuesta">Object</p></li>
 		</ul>
 
 </p>
