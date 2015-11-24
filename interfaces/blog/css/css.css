@@ -1,0 +1,282 @@
+@font-face{
+	font-family: robotoRegular;
+	src:url(../font/Roboto-Regular.ttf);
+}
+body{
+	font-family: robotoRegular;
+	background-color: rgb(224,224,224);
+	margin: 0;
+	padding: 0;
+}
+
+#cabecera{
+	width: 100%;
+	height: 200px;
+	background-color: rgb(60,187,254);
+	margin: 0;
+	color: white;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.45);
+}
+
+h1{
+	letter-spacing: 6px;
+	font-size: 40px;
+}
+
+h2,h5,h6,p,img,header,section,article{
+	margin:0;
+	padding: 0;
+	color:rgb(90,90,90);
+}
+
+h2{
+	font-size: 20px;
+	margin: 10px;
+}
+
+p{
+	margin: 10px;
+	display: inline-block;
+	vertical-align: left;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(90,90,90);
+}
+
+canvas{
+	border:0;
+	padding: 0;
+	margin:0;
+}
+
+nav a{
+	width: 80px;
+	float: right;
+	display: -inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+
+#cabecera > nav > ul > li{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	
+}
+#cabecera > nav > ul > li > div{
+	margin:10px;
+	padding: 0;
+	
+}
+
+#cabecera > nav > ul > li > a{
+	color: rgb(90,90,90);	
+	margin: 10px;
+	padding: 0;
+	font-size: 10px;
+}
+
+#cabecera > hgroup{
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 100px;
+
+}
+
+#cabecera > nav{
+	float: right;
+	margin-right: 10px; 
+}
+
+main{
+	width: 65%;
+	height: 680px;
+	display: inline-block;
+	margin: 20px;
+	padding: 20px;
+}
+
+article{
+	width: 90%;
+	min-height: 200px;
+	background-color: rgb(240,240,240);
+	margin: 20px;
+	padding: 13px;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.13);
+	transition: 1s;
+}
+
+article:hover{
+	transform: scale(1.05);
+	border-left: 4px solid rgb(242,14,84);
+}
+
+article > footer{
+	margin: 10px;
+	float: right;
+}
+article > footer >h5{
+	color: rgb(242,14,84);
+}
+
+#menu{
+	width: 20%;
+	*height: 280px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+	margin-left: 20px;
+	padding: 20px;
+	background-color: rgb(240,240,240);
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.13);
+}
+#menu a{
+	transition: 1s;
+}
+
+#menu a:hover{
+	transform: scale(1.05);
+	border-bottom: 2px solid rgb(242,14,84);
+}
+
+#pie{
+	background-color: rgb(62,72,84);
+	width: 100%;
+	height: 80px;
+}
+
+#creditos{
+	float: right;
+	margin-top: 50px;
+	color: white;
+	font-size: 12px;
+	margin-right: 20px;
+}
+
+img{	
+	width: 150px;
+	height: 100px;
+	margin: 10px;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.13);
+	transition: 1s;
+}
+img:hover{
+	transform: scale(1.05);
+	border-bottom: 3px solid rgb(242,14,84);
+}
+
+#galeria{
+	width: 700px;
+	margin: 0 auto;
+}
+
+#buscar{
+	*display: inline-block;
+	vertical-align: top;
+	width: 50px;
+	height: 25px;
+	margin:0;
+	padding: 0;
+	transition: 2s;
+}
+
+#buscar:hover{
+	width: 83px;
+	background-color: rgb(224,224,224);
+	border-radius: 20px;
+	transform: translate(-20px,0);
+}
+
+/*Sobre mi*/
+
+#cajaPpalSobreMi{
+	height: 347px;
+}
+
+#sobre{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 600px;
+}
+
+#sobre img{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.13);
+	display: inline-block;
+}
+
+#sobre p{
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+	margin-top: 50px;
+}
+
+/*Formulario*/
+
+#cajaPpalContacta{
+	height: 347px;
+}
+
+#contacta{
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 600px;
+}
+
+form table{
+	width:100%;
+	border: 0px;
+	padding: 0px;
+	margin:auto;
+}
+
+form{
+	margin:auto;
+	width:80%;
+	padding:10px;
+}
+form input, form textarea{
+	font-size:10px;
+	margin: 5px;
+	border: 1px dotted rgba(255,255,255,1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	transition: background 1s, box-shadow: 1s; border 1s;
+}
+
+#btn{
+	margin-top: 10px;
+	height: 40px;
+	border-style: none;
+	font-family: robotoRegular;
+	color: white;
+	width: 40px;
+	background: rgb(242,14,84);
+	border-radius: 50px;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.33);
+	transition: 1s;
+}
+
+#btn:hover{
+	transform: scale(1.1);
+}
+
+input[required]{
+	box-shadow: 0px 0px 5px  rgb(60,187,254);
+}
+
+input:invalid{
+	border-color:rgb(242,14,84);
+	box-shadow: 0px 0px 50px rgb(242,14,84);
+	border-radius: 0px 5px 0px 5px;
+}

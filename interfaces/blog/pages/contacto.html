@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Emanuel Galván Fontalba</title>
+		<link rel='stylesheet' href="../css/css.css" type="text/css" />
+		<script type="text/javascript" src="../js/canvas.js"></script>
+	</head>
+	<body>
+		<header id="cabecera">
+			<hgroup><h1>Rincón Main</h1></hgroup>
+			<nav>
+				<ul>
+					<li><div id="buscar"><a href="../index.html"><canvas id="lupa" width="50" height="50"></canvas></a></div></li>
+					<li><a href="sobreMi.html"><canvas id="menuIcono" width="50" height="50"></canvas></a></li>
+					<li><a href="contacto.html">
+					<canvas id="menulista" width="50" height="50"></canvas>
+					</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="cajaPpalContacta">
+				<article id="contacta">
+					
+					<header><h2>Contacto</h2></header>
+					<form action="php/enviamail.php" method="post">
+				
+					<table border=0>
+						<tr>
+							<td width=50%>
+								<p style="text-align:right;">Nombre</p>
+							</td>
+							<td width=50%>
+								<input type="text" size=50% required name="nombre"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p style="text-align:right;">Email</p>
+							</td>
+							<td>
+								<input type="email" size=50% value="ejemplo: usuario@dominio.com" name="email"/>
+							</td>
+						</tr>
+						<tr>
+							<td><p style="text-align:right;">Cuentanos</p>
+							</td>
+							<td>	
+								<textarea cols=50% rows=6 name="mensaje"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								<input id="btn" type="submit" value="Enviar">
+							</td>
+						</tr>
+					</table>
+
+				</form>
+					
+				</article>
+		</div>
+		<footer id="pie">
+		<div id="creditos">Emanuel Galván Fontalba - Desarrollador web</div>
+		</footer>
+	</body>
+</html>
