@@ -1,0 +1,168 @@
+@font-face{
+	font-family: robotoRegular;
+	src:url(font/Roboto-Regular.ttf);
+}
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: robotoRegular;
+}
+
+body > header{
+	background-color: #73D1A4;
+	height: 15%;
+	padding: 0;
+	text-align: center;
+	padding-top: 50px;
+	color: white;
+}
+
+h1, h2{
+	margin: 0;
+}
+
+h1{
+	font-size: 50px;
+}
+
+h2{
+	font-size: 20px;
+}
+section{
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	height: 100%;
+}
+
+section > header{
+	background-color: rgba(0,0,0,0.2);
+	height: 40px;
+	padding-top: 10px;
+	color: #656565;
+}
+
+article{
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding: 20px;
+}
+
+header{
+	margin: 0;
+}
+
+main{
+	margin: 0;
+	padding: 0;
+	height: 64%;
+}
+
+#asignaturas{
+	width: 25%;
+	background-color: #F2F2F2;
+}
+
+#asignaturas li{
+	padding-top: 10px;
+	margin: 4px auto;
+	background-color: #B2EBD1;
+	width: 100%;
+	height: 30px;
+	color: #656565;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.13);
+	transition: 1s;
+	
+}
+
+#asignaturas li:hover{
+	background-color:  #35ea9f;
+	color: white;
+}
+
+
+#tareas{
+	width: 30%;
+	background-color: #B2EBD1;
+}
+
+#tareas li{
+	padding-top: 10px;
+	margin: 4px auto;
+	background-color:  #73D1A4;
+	width: 100%;
+	height: 30px;
+	color: #656565;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.13);
+	transition: 1s;
+	
+}
+
+#tareas li:hover{
+	background-color:  #35ea9f;
+	color: white;
+}
+
+#tarea{
+	width: 45%;
+	background-color: #EBEBEB;
+}
+
+#tarea > article{
+	background-color: white;
+	width: 80%;
+}
+
+footer{
+	background-color: #36734F;
+	height: 10%;
+	text-align: right;
+	padding-right: 20px;
+	margin: 0;
+	padding-top: 20px; 
+	font-size: 15px;
+	font-style: italic;
+}
+
+li{
+	list-style: none; 
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	margin: 0;
+	color: #656565;
+}
+
+p{
+	margin: 0;
+}
+
+#annadir{
+	margin-top: 30px;
+	border-radius: 40px;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(242,14,84);
+	border: 1px solid #f754ad;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.13);
+	color: white;
+	font-size: 20px;
+	font-style: inherit;
+	transition:1s;
+}
+
+#annadir:hover{
+	transform: scale(1.05);
+}
