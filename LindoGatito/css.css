@@ -1,0 +1,14 @@
+#error{
+	color: red;
+}
+
+#info{
+	width: 40%;
+	display: inline-block;
+}
+
+#state{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
