@@ -1,0 +1,69 @@
+@font-face{
+	font-family: "logo";
+	src: url("../font/litt.ttf");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+	background: url(../img/fondo.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+
+h1{
+	display: inline-block;
+	font-family: logo;
+	font-size: 800%;
+	color: #9c3334;
+	background: rgba(255,255,255,0.5);
+	border-radius: 800px;
+	width: 70%;
+	margin-top: 2%;
+}
+
+
+
+input {
+	position: absolute;
+	top: 70%;
+	left: 42%;
+	background: #3850a5;
+	background-image: linear-gradient(to bottom, #3850a5, #324993);
+	border-radius: 260px;
+	border-width: 0; 
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+
+input:hover {
+	background: #3652af;
+	background-image: linear-gradient(to bottom, #3652af, #3b5ccc);
+	text-decoration: none;
+}
+
+@media only screen  and (min-width: 760px) and (max-width: 992px){
+	input{
+		left: 45%;
+	}
+
+	h1{
+		width: 30%;
+	}
+}
+
+@media only screen  and (min-width: 993px){
+	input{
+		left: 47%;
+	}
+
+	h1{
+		width: 25%;
+	}
+}
