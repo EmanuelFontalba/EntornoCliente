@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Cookies - Emanuel Galván Fontalba</title>
+	<script type="text/javascript" src="codigo.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<header>
+	<h1>Cookies</h1>
+</header>
+<article>
+	<h1>Cookies con document.cookie</h1>
+	
+	<h2>Creación de cookies</h2>
+	<p>Para crear la cookie:</p><p class="code"> document.cookie = 'nombreCookie'='valorCookie';'fechaDeExp'</p>
+	<input type="button" value="Crear cookie" id="crear"/>
+	<h2>Borrado de cookies</h2>
+	<p>Para borrar la cookie:</p><p class="code"> document.cookie= 'nombreCookie'=' ';'-100'</p>
+	<input type="button" value="Borrar cookie" id="borrar"/>
+	<h2>Uso de la cookie ya creada</h2>
+	<p>Separamos la cookie por ; con el método split.</p>
+	<p>Recorremos ese array y extraemos las cadenas correspondientes.</p>
+	<input type="button" value="Mostrar cookie" id="mostrar"/><br/><br/>
+</article>
+
+<article>
+	<h2>Introduce el valor de la cookie.</h2>
+	<input type="text" id="valor">
+</article>
+<div id='info'>
+</div>
+<article>
+	<h1>Cookies con localStorage</h1>
+
+	<h2>Creación de cookies</h2>
+	<p>Para crear la cookie:</p><p class="code"> localStorage.setItem('nombreCookie', 'valorCookie');</p>
+	<input type="button" value="Crear cookie" id="crearLocal"/>
+	<h2>Borrado de cookies</h2>
+	<p>Para borrar la cookie:</p><p class="code"> localStorage.removeItem('nombreCookie');</p>
+	<input type="button" value="Borrar cookie" id="borrarLocal"/>
+	<h2>Uso de la cookie ya creada</h2>
+	<p>Para usar la cookie:</p><p class="code"> localStorage.getItem('nombreCookie');</p>
+	<input type="button" value="Mostrar cookie" id="mostrarLocal"/><br/><br/>
+</article>
+	
+</body>
+</html>
