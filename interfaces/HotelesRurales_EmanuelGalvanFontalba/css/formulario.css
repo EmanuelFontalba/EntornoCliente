@@ -68,10 +68,10 @@ li{
 }
 
 form{
-	width: 93%;
+	width: 95%;
 	border: 2px solid black;
-	margin: 3px;;
-	padding: 12px;
+	margin: 3px;
+	*padding: 6px;
 	text-align: right;
 }
 
@@ -96,6 +96,7 @@ input{
 	text-align: center;
 	width: 100%;
 	padding: 0;
+	margin-bottom: 12px;
 }
 
 #btnEnv{
