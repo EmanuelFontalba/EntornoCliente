@@ -24,7 +24,7 @@ if(regex.test(navigator.sayswho)){
 $(document).ready(function(){
     setTimeout(function(){
         $("#carga").hide(1500);
-    },2000);
+    },5000);
     
 
 	$('a.desplazamiento').click(function(e){
