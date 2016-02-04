@@ -1,0 +1,182 @@
+*{
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+
+ }
+
+
+ /* video de fondo */
+ video {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+.divs{
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#ancla1{
+	background: url("../img/backgroundMac.jpg") no-repeat center;
+	background-size: cover;
+	box-shadow: -2px 17px 32px -9px rgba(0,0,0,0.75);
+}
+
+#ancla2{
+	background-color: rgba(0,0,0,0.6);
+}
+
+img{
+	width: 10%;
+}
+
+.flechas{
+	*height: 100%;
+}
+
+#arriba, #abajo{
+	position: relative;
+	animation-name: salto;
+	animation-duration: 0.8s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+@keyframes salto{
+	0% {top:0px;}
+	100% {top: 10px;}
+}
+
+.divButton{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+}
+.contenido{
+	height: 90%;
+	text-align: center;
+}
+
+#titulos{
+	position: relative;
+  	top: 50%; 
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Poiret One', sans-serif, bold;
+	color: white;
+}
+
+#description{
+	font-family: 'Poiret One', sans-serif;
+	color: white;
+	width: 60%;
+	margin: 0 auto;
+	font-size: 80%;
+	position: relative;
+  	top: 20%;
+}
+
+#socials{
+	position: relative;
+  	top: 40%; 
+  	left: 50%;
+	transform: translate(-50%, -40%);
+	text-align: center;
+}
+
+#socials a{
+	margin: 10px;
+}
+
+#socials a img{
+	opacity: 0.5;
+	transition: 1s;
+}
+
+#socials a img:hover{
+	opacity: 1;
+}
+
+h1{
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 200%;
+	border-top: 3px solid white;
+}
+
+h2{
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 90%;
+	border-bottom: 3px solid white;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+@media only screen  and (min-width: 760px) and (max-width: 992px){
+	#description{
+		position: relative;
+		font-size: 200%;
+	  	top: 20%;
+	  	transform: translate(0, -20%);
+	}
+
+	#socials{
+		position: relative;
+	  	top: 50%; 
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	h1{
+		font-size: 350%;
+	}
+
+	h2{
+		font-size: 150%;
+	}
+
+	img{
+		width: 8%;
+	}
+}
+
+@media only screen  and (min-width: 993px){
+	#description{
+		position: relative;
+		font-size: 250%;
+	  	top: 30%;
+	  	transform: translate(0, -30%);
+	}
+
+	#socials{
+		position: relative;
+	  	top: 50%; 
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	h1{
+		font-size: 400%;
+	}
+
+	h2{
+		font-size: 200%;
+	}
+
+	img{
+		width: 5%;
+	}
+}
