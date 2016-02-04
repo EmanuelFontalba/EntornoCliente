@@ -22,6 +22,11 @@ if(regex.test(navigator.sayswho)){
 }
 
 $(document).ready(function(){
+    setTimeout(function(){
+        $("#carga").hide(1500);
+    },2000);
+    
+
 	$('a.desplazamiento').click(function(e){
 		e.preventDefault();
 		volver  = $(this).attr('href');
@@ -31,3 +36,4 @@ $(document).ready(function(){
 	});
 
 });
+
