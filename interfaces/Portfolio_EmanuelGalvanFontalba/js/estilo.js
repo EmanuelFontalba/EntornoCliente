@@ -25,14 +25,15 @@ if(regexFirefox.test(navigator.sayswho)){
 $(document).ready(function(){
 
     var regexSafari = /^Safari/i;
-    if(!regexFirefox.test(navigator.sayswho)){
-        if(screen.width < 400){
+    if(screen.width < 760){
+        if(!regexSafari.test(navigator.sayswho)){
             $(document).click(function(){
                 var video = document.getElementById("vid");
                 video.play();
-            });  
-        }
+            });
+        }  
     }
+
     
     setTimeout(function(){
         $("#carga").hide(1500);
