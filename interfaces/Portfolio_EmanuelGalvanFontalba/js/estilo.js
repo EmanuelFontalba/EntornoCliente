@@ -15,17 +15,24 @@ navigator.sayswho= (function(){
 })();
 
 
-var regex = /^Firefox/i;
-if(regex.test(navigator.sayswho)){
+var regexFirefox = /^Firefox/i;
+
+if(regexFirefox.test(navigator.sayswho)){
 	var body = document.getElementsByTagName("body");
 	body[0].style.height ="100%";
 }
 
 $(document).ready(function(){
-    $(document).click(function(){
-        var video = document.getElementById("vid");
-        video.play();
-    });
+    
+    var regexSafari ) = /^Safari/i;
+    if(!regexFirefox.test(navigator.sayswho)){
+        if(screen.width < 400){
+            $(document).click(function(){
+                var video = document.getElementById("vid");
+                video.play();
+            });  
+        }
+    }
     
     setTimeout(function(){
         $("#carga").hide(1500);
