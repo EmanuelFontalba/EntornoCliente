@@ -22,7 +22,11 @@ if(regex.test(navigator.sayswho)){
 }
 
 $(document).ready(function(){
-    document.getElementById("vid").play();
+    $(document).click(function(){
+        var video = document.getElementById("vid");
+        video.play();
+    });
+    
     setTimeout(function(){
         $("#carga").hide(1500);
     },5000);

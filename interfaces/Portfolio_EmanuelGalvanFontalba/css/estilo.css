@@ -111,7 +111,7 @@ img{
 }
 
 .flechas{
-	*height: 100%;
+	outline: none;
 }
 
 #arriba, #abajo{
@@ -168,6 +168,7 @@ img{
 
 #socials a{
 	margin: 10px;
+	outline: none;
 }
 
 #socials a img{
