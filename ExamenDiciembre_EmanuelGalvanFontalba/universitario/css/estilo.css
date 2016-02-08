@@ -1,0 +1,20 @@
+form{
+	width: 50%;
+}
+span{
+	display: inline-block;
+	width: 150px;
+	margin: 2px;
+}
+input{
+	margin: 2px;
+}
+#campos{
+	border: 1px solid grey;
+	padding: 4px;
+}
+.error{
+	color: red;
+	display: none;
+	font-size: 10px;
+}
