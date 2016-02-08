@@ -23,8 +23,8 @@ if(regexFirefox.test(navigator.sayswho)){
 }
 
 $(document).ready(function(){
-    
-    var regexSafari ) = /^Safari/i;
+
+    var regexSafari = /^Safari/i;
     if(!regexFirefox.test(navigator.sayswho)){
         if(screen.width < 400){
             $(document).click(function(){
