@@ -1,7 +1,7 @@
 *{
  	margin: 0;
  	padding: 0;
- 	overflow: hidden;
+ 	overflow: hidden!important;
 
  }
 
@@ -20,7 +20,7 @@
 /*-- Animación de Cargando --*/
 .spiner {
     height: 100%;
-    padding-top: 20%;
+    padding-top: 50%;
 }
 .ball,.ball1{
     border-radius: 50px;
@@ -226,6 +226,10 @@ a{
 	img{
 		width: 8%;
 	}
+
+	.spiner {
+	    padding-top: 40%;
+	}
 }
 
 @media only screen  and (min-width: 993px){
@@ -253,5 +257,9 @@ a{
 
 	img{
 		width: 5%;
+	}
+
+	.spiner {
+	    padding-top: 20%;
 	}
 }
