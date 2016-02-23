@@ -47,6 +47,5 @@ $(document).ready(function(){
 			scrollTop: $(volver).offset().top
 		}, 2000);
 	});
-
 });
 

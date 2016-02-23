@@ -1,0 +1,18 @@
+.error{
+	color:red;
+	font-size: 12px;
+}
+
+form, div, ul{
+	margin: 10px;
+	border: 1px grey solid;
+	padding: 10px;
+}
+
+input{
+	margin-bottom: 10px;
+}
+
+li{
+	margin-left: 30px;
+}
