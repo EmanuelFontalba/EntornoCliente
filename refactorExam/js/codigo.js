@@ -40,36 +40,26 @@
 		this.sex=sex;
 	}
 
-	User.prototype.show = function(){
-		var div = document.getElementById("info");
-		div.innerHTML = "name: "+this.name+"<br>lastName:"+this.lastName+"<br>sex:"+this.sex;
-	}
+	User.prototype = {
+		show: function(){
+			var div = document.getElementById("info");
+			div.innerHTML = "name: "+this.name+"<br>lastName:"+this.lastName+"<br>sex:"+this.sex;
+		},
 
-	User.prototype.createListItenm = function(){
-		var ul = document.createElement("ul");
+		createListItenm: function(){
+			var ul = document.getElementsByTagName("ul");
 
-		var li = document.createElement("li");
-		var text = document.createTextNode(this.name);
-		li.appendChild(text);
-		ul.appendChild(li);
+			var li = document.createElement("li");
+			var text = 	" Nombre: "+this.name+
+						" Apellidos: "+this.lastName+
+						" DNI: "+this.dni+
+						" Sexo: "+this.sex;
+			li.innerHTML=text;
+			ul[0].appendChild(li);
 
-		li = document.createElement("li");
-		text= document.createTextNode(this.lastName);
-		li.appendChild(text);
-		ul.appendChild(li);
-
-		li = document.createElement("li");
-		text= document.createTextNode(this.dni);
-		li.appendChild(text);
-		ul.appendChild(li);
-
-		li = document.createElement("li");
-		text= document.createTextNode(this.sex);
-		li.appendChild(text);
-		ul.appendChild(li);
-
-		var body = document.getElementsByTagName("body")[0];
-		body.appendChild(ul);
+			var body = document.getElementsByTagName("body")[0];
+			body.appendChild(ul[0]);
+		}
 	}
 
 	function setCookie(name_cookie, value_cookie, days) {
@@ -202,10 +192,12 @@
 			dni.value="";
 			sex.value="Hombre";
 			terms.checked=false;
-			document.getElementById("eName").innerHTML="";
+			document.getElementById("errName").innerHTML="";
 			document.getElementById("eLastName").innerHTML="";
 			document.getElementById("eDNI").innerHTML="";
 			document.getElementById("eTerms").innerHTML="";
+			info.innerHTML="";
+			document.getElementsByTagName("ul")[0].innerHTML="";
 		});
 	}
 
