@@ -1,0 +1,261 @@
+@font-face{
+	font-family: "logo";
+	src: url("../font/litt.ttf");
+}
+
+@font-face{
+	font-family: "roboto";
+	src: url("../font/Roboto-Light.ttf");
+}
+
+.err{
+	color: red;
+	font-size: 70%;
+}
+
+body{
+	font-family: roboto;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	font-family: logo;
+	text-align: center;
+	font-size: 200%;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.45);
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0; 
+}
+h1{
+	margin-top: 0;
+}
+
+footer{
+	padding: 5px;
+	text-align: center;
+	border: 2px solid black;
+	font-size: 80%;
+	font-style: italic;
+}
+
+aside{
+	border: 2px solid black;
+	margin: 3px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+li{
+	margin: 12px;
+	text-align: center;
+	list-style: none;
+
+}
+.botones{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 3px;
+	width: 100%;
+	transition:0.3s;
+}
+
+.botones:hover{
+	background-color: #111;
+}
+
+form{
+	width: 95%;
+	border: 2px solid black;
+	margin: 3px;
+	padding: 6px;
+	text-align: left;
+}
+
+.text{
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+}
+
+h2{
+	text-align: center;
+	text-decoration: overline;
+}
+
+input{
+	margin-right: 6%;
+	margin-top: 12px;
+}
+
+#enviar{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 12px;
+}
+
+#btnEnv{
+	margin: 0;
+	margin-top: 12px;
+	font-family: roboto;
+	font-size: 100%;
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
+	border: none;
+}
+
+#btnEnv:hover{
+	background-image: linear-gradient(to bottom, #dbdbdb, #b7b5b5);
+}
+
+section{
+	display: none;
+}
+
+@media only screen  and (min-width: 760px) and (max-width: 992px){
+	form{
+		display: inline-block;
+		width: 64%;
+	}
+
+	header{
+		font-size: 300%;
+	}
+
+	.text{
+		display: inline-block;
+		width: 54%;
+		text-align: left;
+	}
+
+	section{
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+	}
+
+	article{
+		display: inline-block;
+		margin: 3px;
+		*border: 2px solid black;
+		*padding: 3px;
+	}
+
+	img{
+		width: 98%;
+		display: inline-block;
+		border: 2px solid black;
+	}
+
+	h3{
+		text-decoration: overline;
+		padding: 5px;
+		border: 2px solid black;
+		text-align: center;
+		margin: 0px;
+		margin-bottom: 3px;
+	}
+
+	p{
+		vertical-align: top;
+		padding: 5px;
+		text-align: center;
+		border: 2px solid black;
+		margin-top: 0;
+		font-size: 80%;
+	}
+
+	#btnEnv{
+		margin-bottom: 4px;
+	}
+}
+
+@media only screen  and (min-width: 993px){
+	form{
+		display: inline-block;
+		width: 64%;
+	}
+
+	header{
+		font-size: 300%;
+	}
+
+	.text{
+		display: inline-block;
+		width: 34%;
+		text-align: left;
+	}
+
+	section{
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+	}
+
+	article{
+		display: inline-block;
+		margin: 3px;
+		*border: 2px solid black;
+		*padding: 3px;
+	}
+
+	img{
+		width: 98.5%;
+		display: inline-block;
+		border: 2px solid black;
+	}
+
+	h3{
+		text-decoration: overline;
+		padding: 5px;
+		border: 2px solid black;
+		text-align: center;
+		margin: 0px;
+		margin-bottom: 3px;
+	}
+
+	p{
+		vertical-align: top;
+		padding: 5px;
+		text-align: center;
+		border: 2px solid black;
+		margin-top: 0;
+		font-size: 80%;
+	}
+
+	#btnEnv{
+		margin-bottom: 4px;
+	}
+	main{
+		display: inline-block;
+		width: 75%;
+	}
+
+	aside{
+		display: inline-block;
+		vertical-align: top;
+		width: 23.5%;
+		margin-top: 3px;
+		margin-bottom: 6px;
+	}
+
+	footer{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin: 3px;
+		width: 98.5%;
+		display: inline-block;
+	}
+}

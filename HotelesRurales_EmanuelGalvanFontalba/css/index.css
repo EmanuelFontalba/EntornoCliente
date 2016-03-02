@@ -1,0 +1,204 @@
+@font-face{
+	font-family: "logo";
+	src: url("../font/litt.ttf");
+}
+
+@font-face{
+	font-family: "roboto";
+	src: url("../font/Roboto-Light.ttf");
+}
+
+body{
+	font-family: roboto;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	text-align: center;
+	font-family: logo;
+	font-size: 200%;
+	box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.45);
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0; 
+}
+h1{
+	margin-top: 0;
+}
+
+article{
+	display: inline-block;
+	*text-align: center;
+	margin: 3px;
+	border: 2px solid black;
+	padding: 3px;
+}
+
+img{
+	width: 10%;
+	display: inline-block;
+	*padding: 5px;
+	border: 2px solid black;
+	display: none;
+}
+
+h3{
+	text-decoration: overline;
+	padding: 5px;
+	border: 2px solid black;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 3px;
+	transition:0.3s;
+}
+
+h3:hover{
+	background-color: #EEE;
+}
+
+p{
+	*display: inline-block;
+	vertical-align: top;
+	*width: 96%;
+	padding: 5px;
+	text-align: center;
+	border: 2px solid black;
+	margin-top: 0;
+	font-size: 80%;
+}
+
+form{
+	text-align: center;
+	padding: 3px;
+	display: none;
+}
+
+input{
+	margin: 0;
+}
+
+footer{
+	padding: 5px;
+	text-align: center;
+	border: 2px solid black;
+	font-size: 80%;
+	font-style: italic;
+}
+
+#siguiente{
+	float: right;
+	margin: 3px;
+	text-decoration: none;
+	color: grey;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.disponible{
+	background-color: #8de271;
+}
+
+.noDisponible{
+	background-color: #e28f71;
+}
+
+aside{
+	border: 2px solid black;
+	margin: 3px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+li{
+	margin: 12px;
+	text-align: center;
+	list-style: none;
+
+}
+.botones{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 3px;
+	width: 100%;
+	transition:0.3s;
+}
+
+.botones:hover{
+	background-color: #111;
+}
+
+h4{
+	text-decoration: overline;
+}
+
+
+
+@media only screen  and (min-width: 760px) and (max-width: 992px){
+	img{
+		display: inline-block;
+		width: 30%;
+	}
+
+	p{
+		display: inline-block;
+		width: 66.5%;
+		min-height: 135px;
+		font-size: 100%;
+	}
+
+	header{
+		font-size: 250%;
+	}
+}
+
+@media only screen  and (min-width: 993px){
+	img{
+		display: inline-block;
+		width: 30%;
+	}
+
+	p{
+		display: inline-block;
+		width: 66.5%;
+		min-height: 122px;
+		font-size: 110%;
+	}
+
+	header{
+		font-size: 300%;
+	}
+
+	h3{
+		font-size: 150%;
+	}
+
+	main{
+		display: inline-block;
+		width: 70%;
+	}
+
+	aside{
+		display: inline-block;
+		width: 27%;
+		vertical-align: top;
+		margin-top: 3px;
+		padding: 5px;
+	}
+	.botones{
+		padding-top: 28px;
+		min-height: 50px;
+		margin: 0;
+		font-size: 120%;
+	}
+}
