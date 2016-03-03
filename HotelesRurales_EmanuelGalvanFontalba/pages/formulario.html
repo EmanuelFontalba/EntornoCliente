@@ -16,17 +16,17 @@
 		<h1>Ruralgo</h1>
 	</header>
 	<main>
-		<form>
+		<form action="index.html">
 			<h2>Reserva</h2>
 			<spam class="text">Nombre:</spam> <input id="nombre" type="text" size="10"><span class="err" id="errNom"></span><br/>
 			<spam class="text">Apellidos:</spam> <input id="apellidos" type="text" size="10"><span class="err" id="errAp"></span><br/>
 			<spam class="text">Email:</spam> <input id="mail" type="text" size="10"><span class="err" id="errMail"></span><br/>
 			<spam class="text">Teléfono:</spam> <input id="telf" type="text" size="10"><span class="err" id="errTelf"></span><br/>
-			<spam class="text">Número de personas:</spam> <input id="numPer" type="text" size="10"><span class="err" id="errNumPer"></span><br/>
-			<spam class="text">Fecha de entrada:</spam> <input id="fEntr" type="text" size="10"><span class="err" id="errFEntr"></span><br/>
+			<spam class="text">Número de personas:</spam> <input id="numPer" type="text" size="10"><span class="err" id="errNumPer" pattern="^[(\d{2}/)]{2}/\d{4}$" tittle="Formato inválido"></span><br/>
+			<spam class="text">Fecha de entrada:</spam> <input id="fEntr" type="text" size="10"><span class="err" id="errFEntr" pattern="^[(\d{2}/)]{2}/\d{4}$" tittle="Formato inválido"></span><br/>
 			<spam class="text">Fecha de salida:</spam> <input id="fSal" type="text" size="10"><span class="err" id="errFSal"></span><br/>
 			<spam class="text">Acepto las condiciones</spam> <input id="terms" type="checkbox" size="10"><span class="err" id="errTerms"></span><br/>
-			<span id="enviar"><input id='btnEnv' type="button" value="Reservar"></span>
+			<span id="enviar"><input id='btnEnv' type="submit" value="Reservar"></span>
 		</form>
 		<section>
 			<article>
